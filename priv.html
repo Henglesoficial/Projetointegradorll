@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo de Privacidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 300px;
+        }
+        .btn {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .close {
+            background-color: #e74c3c;
+        }
+        .close:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Termo de Privacidade</h1>
+    
+    <p>Este documento descreve como coletamos, usamos e protegemos suas informações pessoais. Ao acessar nosso site, você concorda com os termos descritos neste documento.</p>
+    
+    <h2>1. Coleta de Informações</h2>
+    <p>Coletamos informações que você nos fornece diretamente, como seu nome e e-mail, ao se inscrever em nossos serviços.</p>
+    
+    <h2>2. Uso das Informações</h2>
+    <p>Usamos suas informações para melhorar nossos serviços e enviar comunicações relevantes.</p>
+    
+    <h2>3. Proteção de Dados</h2>
+    <p>Adotamos medidas de segurança para proteger suas informações contra acesso não autorizado.</p>
+    
+    <h2>4. Alterações na Política</h2>
+    <p>Poderemos atualizar esta política de privacidade periodicamente. Recomendamos que você a revise regularmente.</p>
+
+    <button onclick="openPopup()" class="btn">Aceitar Termos</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Aceitação dos Termos</h2>
+            <p>Você aceita os termos da nossa política de privacidade?</p>
+            <button onclick="acceptTerms()" class="btn">Sim</button>
+            <button onclick="closePopup()" class="btn close">Não</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function acceptTerms() {
+            alert("Obrigado por aceitar os termos de privacidade!");
+            closePopup();
+        }
+    </script>
+
+<a href="index.html" class="btn">Voltar à Tela Inicial</a>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte ao Cliente</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="suporte.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+<div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a class="small text-light" href="index.html">Início</a></li>
+                <li class="breadcrumb-item"><a class="small text-light" href="carreiras.html">Carreira</a></li>
+                <li class="breadcrumb-item"><a class="small text-light" href="terms.html">Termos</a></li>
+                <li class="breadcrumb-item"><a class="small text-light" href="#">Privacidade</a></li>
+            </ol>
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+            <small>Siga-nos:</small>
+            <div class="h-100 d-inline-flex align-items-center">
+                <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn-lg-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Topbar End -->
+
+<!-- Fim do Carrossel -->
+<body>
+    <div class="container">
+        <h1>Sistema de Suporte ao Cliente</h1>
+
+        <div class="ticket-form">
+            <h2>Abrir um Novo Ticket</h2>
+            <input type="text" id="customerName" placeholder="Seu Nome" required>
+            <input type="email" id="customerEmail" placeholder="Seu Email" required>
+            <textarea id="ticketDescription" placeholder="Descreva seu problema" rows="4" required></textarea>
+            <button onclick="submitTicket()">Enviar Ticket</button>
+        </div>
+
+        <div class="ticket-list">
+            <h2>Tickets Abertos</h2>
+            <div id="ticketsContainer">
+                <!-- Lista de tickets abertos -->
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="btn">Voltar à Tela Inicial</a>
+
+    <script src="suporte.js"></script>
+</body>
+</html>
