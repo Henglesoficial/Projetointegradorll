@@ -4,11 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suporte ao Cliente</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
     <link href="suporte.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            border-bottom: 2px solid #007bff;
+        }
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .breadcrumb-item {
+            margin-right: 15px;
+        }
+        .breadcrumb-item a {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .breadcrumb-item a:hover {
+            color: #007bff;
+        }
+        .social-icons a {
+            margin-left: 10px;
+            color: #007bff;
+            font-size: 20px;
+        }
+        .social-icons a:hover {
+            color: #ffffff;
+        }
+        .container {
+            padding: 20px;
+        }
+        .ticket-form input, .ticket-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .ticket-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .ticket-form button:hover {
+            background-color: #0056b3;
+        }
+        .btn {
+            margin-top: 20px;
+            background-color: #343a40;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #007bff;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,34 +85,19 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Topbar Start -->
-<div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
-    <div class="row gx-0 align-items-center d-none d-lg-flex">
-        <div class="col-lg-6 px-5 text-start">
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a class="small text-light" href="index.html">Início</a></li>
-                <li class="breadcrumb-item"><a class="small text-light" href="carreiras.html">Carreira</a></li>
-                <li class="breadcrumb-item"><a class="small text-light" href="terms.html">Termos</a></li>
-                <li class="breadcrumb-item"><a class="small text-light" href="#">Privacidade</a></li>
-            </ol>
-        </div>
-        <div class="col-lg-6 px-5 text-end">
-            <small>Siga-nos:</small>
-            <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn-lg-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+    <div class="container-fluid top-bar wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                    <li class="breadcrumb-item"><a href="carreiras.html">Carreira</a></li>
+                    <li class="breadcrumb-item"><a href="terms.html">Termos</a></li>
+                    <li class="breadcrumb-item"><a href="priv.html">Privacidade</a></li>
+                </ol>
             </div>
-        </div>
-    </div>
-</div>
-
     <!-- Topbar End -->
 
-<!-- Fim do Carrossel -->
-<body>
     <div class="container">
         <h1>Sistema de Suporte ao Cliente</h1>
 
